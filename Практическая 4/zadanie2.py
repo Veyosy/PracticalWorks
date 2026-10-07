@@ -30,3 +30,25 @@ distance = math.sqrt(result)
 
 # - ответ
 print(distance)
+
+
+
+import math
+
+x1, y1 = map(float, input("Введите координаты первой точки (x y): ").split())
+x2, y2 = map(float, input("Введите координаты второй точки (x y): ").split())
+
+distance = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+print("Евклидово расстояние:", distance)
+
+import math
+
+# Ввод данных
+x1, y1 = map(float, input("Введите координаты первой точки (x y): ").split())
+x2, y2 = map(float, input("Введите координаты второй точки (x y): ").split())
+
+# Нахождение длины
+d = math.sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2))
+
+print(f"Евклидово расстояние: {d:.2f} метров")
